@@ -1,0 +1,96 @@
+body{
+	margin: 0;
+	padding-top: 32px;
+	font: black;
+	font-family: 'opensans-bold', sans-serif;
+}
+
+#topbar {
+   font-size: 16px;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background: #f3f3f3;
+}
+
+ul#nav {
+   width: auto;
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   height: 32px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+   display: inline-block;
+   padding: 8px 15px;
+   text-decoration: none;
+   color: black;
+}
+
+.container{
+	max-width: 1000px;
+	width: 100%;
+	padding: 65px;
+	position: relative;
+	margin: auto;
+}
+
+#about{
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+
+#profilepic img{
+	padding: 8px;
+	box-sizing: border-box;
+	width: 35%;
+	background: #f3f3f3;
+	float: left;
+}
+
+#sidestuff{
+	top:50px;
+	width: 61%;
+	padding-left: 4%;
+	float: left;
+}
+
+#sidestuff article{
+	font: 16px;
+	letter-spacing: 1px;
+	margin-left: -1px;
+}
+
+#sidestuff h1{
+	font-size: 60px;
+	letter-spacing: 2px;
+	line-height: 15px;
+	margin-left: -5px;
+}
+
+#social{
+	text-align: left;
+	margin: 0;
+	padding-top: 20px;
+	list-style: none;
+	margin-left: -40px;
+}
+
+#social li{
+	color: #fff;
+	display: inline-block;
+	font-size: 40px;
+	padding-right:40px;
+}
+
+#social li a{ 
+	color: black;
+}
