@@ -1,24 +1,25 @@
-$(function () {
+var classes = $('#class_import');
+var class_ids = ['179800', '178668', '180670', '178627', '178620'];
 
-	var classes = $('#classes');
-	//classes.append('<li>1dsfsdfsd</li>');
+$.ajax({
+	url: 'http://api.asg.northwestern.edu/courses/details/',
+	data: {
+		key: 'TwewRiLaO2UQkhVw',
+		id: 179800, 
+	},
+	type: 'GET',
+	dataType: 'json',
 
-	$.ajax({
-		url: 'http://api.asg.northwestern.edu/courses/?key=TwewRiLaO2UQkhVw&id=178620/',
-		type: 'GET',
-		dataType: 'json',
+	error: function(xhr, status, error){
+     var errorMessage = xhr.status + ': ' + xhr.statusText;
+     alert('Error - ' + errorMessage);
+ 	},
 
-		error: function(xhr, status, error){
-         var errorMessage = xhr.status + ': ' + xhr.statusText
-         alert('Error - ' + errorMessage);
-     	},
-
-		success: function(data) {
-			alert('dank meme');
-			//classes.append('<li>no error</li>');
-			//$.each(data, function(index, item) {
-			//	classes.append('<li>title: ' + item.title + '</li>');
-			//});	
-		}
-	});
+	success: function(data) {
+		//console.log(JSON.stringify(data));
+		$.each(data, function(index, item) {
+			classes.append('<h3>' + item.title + '</h3><br>');
+			classes.append('<p>' + item.meeting_days + ', ' + item.room.building_name + ' ' + item.room.name + '</p><br>');
+		});	
+	}
 });

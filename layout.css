@@ -1,7 +1,6 @@
 body{
-	margin: 0;
-	padding-top: 32px;
-	font: black;
+	padding-left: 65px;
+	padding-right: 65px;
 	font-family: 'opensans-bold', sans-serif;
 }
 
@@ -19,10 +18,10 @@ body{
 ul#nav {
    width: auto;
    text-align: center;
+   height: 32px;
 }
 ul#nav li {
    position: relative;
-   height: 32px;
    display: inline-block;
 }
 
@@ -35,17 +34,15 @@ ul#nav li a {
 }
 
 .container{
+	margin: auto;
 	max-width: 1000px;
 	width: 100%;
-	padding: 65px;
-	position: relative;
-	margin: auto;
+	padding-bottom: 25px;
+	overflow: auto;
 }
 
 #about{
-	width: 100%;
-	float: left;
-	display: inline-block;
+	margin-top: 100px;
 }
 
 #profilepic img{
@@ -57,10 +54,10 @@ ul#nav li a {
 }
 
 #sidestuff{
-	top:50px;
 	width: 61%;
 	padding-left: 4%;
 	float: left;
+	margin-top: 5px;
 }
 
 #sidestuff article{
@@ -72,15 +69,15 @@ ul#nav li a {
 #sidestuff h1{
 	font-size: 60px;
 	letter-spacing: 2px;
-	line-height: 15px;
+	line-height: 60px;
 	margin-left: -5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 #social{
 	text-align: left;
-	margin: 0;
-	padding-top: 20px;
-	list-style: none;
+	margin-top: 20px;
 	margin-left: -40px;
 }
 
@@ -88,9 +85,42 @@ ul#nav li a {
 	color: #fff;
 	display: inline-block;
 	font-size: 40px;
-	padding-right:40px;
+	margin-right:40px;
 }
 
 #social li a{ 
 	color: black;
+}
+
+#classes{
+ 	margin-top: 50px;
+}
+
+#class_list{
+	font: 16px;
+	letter-spacing: 1px;
+}
+
+#classes h2{
+	text-align: center;
+	letter-spacing: 0.5px;
+	font-size: 40px;
+}
+
+#searchbox {
+
+}
+
+.hit {
+	overflow: auto;
+}
+
+.hit-content h2, .hit-content p{
+	display: inline;
+	float: left;
+	
+}
+.hit-content p{
+	padding-left: 10px;
+	padding-top: 11px;
 }

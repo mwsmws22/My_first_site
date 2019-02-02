@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Mitchell Smith</title>
-    <!--<link rel="stylesheet" href="main.css">-->
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts.js" async></script>
+	  <meta charset="utf-8">
+	  <title>Mitchell Smith</title>
+	  <!--<link rel="stylesheet" href="main.css">-->
+	  <link rel="stylesheet" href="layout.css">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">
   </head>
   <body>
   	<!-- Header -->
   	<header id="home">
   		<nav id="topbar">
-			<ul id="nav">
-	            <li><a href="#home">About</a></li>
-	          	<li><a href="#education">Education</a></li>
-	            <li><a href="#experience">Experience</a></li>
-	            <li><a href="#leadership">Leadership</a></li>
-			</ul>
+				<ul id="nav">
+		      <li><a href="#home">About</a></li>
+		    	<li><a href="#education">Education</a></li>
+		      <li><a href="#experience">Experience</a></li>
+		      <li><a href="#leadership">Leadership</a></li>
+				</ul>
   		</nav>
-	</header>
-	<!-- About -->
-	<div class="container">
-		<div id="about">
-			<div id="profilepic">
-				<img src="me.jpg">
-			</div>
-			<div id="sidestuff">
-				<h1>Mitchell Smith</h1>
-				<article>I am a sophomore Computer Science major at Northwestern University. I have experience collaborating on group design and coding projects. I plan to continue pursuing work opportunities and further narrowing down my specialization within Computer Science as a whole, over my four years at Northwestern. In particular, I have and interest in GIS and Data Visualization. Also, because I am working towards a minor in Japanese, I am looking for career opportunities in Japan if possible. I believe that with my experience and drive, I can accomplish great things. Please contact on any platform below if you want to collaborate with me! </article>
-				<ul id="social">
+		</header>
+		<!-- About -->
+		<div class="container">
+			<div id="about">
+				<div id="profilepic">
+					<img src="me.jpg">
+				</div>
+				<div id="sidestuff">
+					<h1>Mitchell Smith</h1>
+					<article>I am a sophomore Computer Science major at Northwestern University. I have experience collaborating on group design and coding projects. I plan to continue pursuing work opportunities and further narrowing down my specialization within Computer Science as a whole, over my four years at Northwestern. In particular, I have and interest in GIS and Data Visualization. Also, because I am working towards a minor in Japanese, I am looking for career opportunities in Japan if possible. I believe that with my experience and drive, I can accomplish great things. Please contact on any platform below if you want to collaborate with me! </article>
+					<ul id="social">
 				   <li><a href="mailto:mitchellsmith2021@u.northwestern.edu"><i class="fa fa-envelope"></i></a></li>
 				   <li><a href="tel:4259224079"><i class="fas fa-phone"></i></a></li>
 				   <li><a href="skype:mitchell.s222?chat"><i class="fab fa-skype"></i></a></li>	               
-	               <li><a href="https://linkedin.com/in/mitchell-smith-nu/"><i class="fab fa-linkedin"></i></a></li>
-	               <li><a href="https://github.com/mwsmws22"><i class="fab fa-github"></i></a></li>
-            	</ul>
+		       <li><a href="https://linkedin.com/in/mitchell-smith-nu/"><i class="fab fa-linkedin"></i></a></li>
+		       <li><a href="https://github.com/mwsmws22"><i class="fab fa-github"></i></a></li>
+		    	</ul>
+				</div>	
 			</div>
-			<div id="schedule">
-				<ul id="classes"></ul>
-			</div>		
 		</div>
-	</div>
+		<!-- Search -->
+		<div class="container">
+		  <div id="searchbox"></div>
+		  <div id="hits"></div>
+		  <div id="pagination"></div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js"></script>
+		<script src="app.js"></script>
   </body>
 </html>
